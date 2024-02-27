@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/morcego.ico">
+    <title>Criptografia</title>
+</head>
+
+<body>
+    <header>
+        <img src="img/minhaLogo.svg" alt="logo">
+    </header>
+    <main>
+        <section class="container">
+            <textarea class="container__input" id="container__input" spellcheck="false" rows="7">Digite seu texto para criptografar ou descriptografar</textarea>
+            <section class="container__abaixo">
+                <section class="container__abaixo__aviso">
+                    <img src="img/exclamacao.png" alt="Ícone de aviso">
+                    <p class="container__abaixo__aviso__texto">Apenas letras minúsculas e sem acento</p>
+                </section>
+                <section class="container__abaixo__botao">
+                    <button class="container__abaixo__botao__codificar" onclick="codificar()">Criptografar</button>
+                    <button class="container__abaixo__botao__decodificar" onclick="decodificar()">Descriptografar</button>
+                </section>
+            </section>
+        </section>
+        <output>
+            <section class="output__inicial" id="output__inicial">
+                <img src="img/lupaAzul.png" alt="Pessoa segurando uma lupa">
+                <h3 class="output__inicial__mensagem">Nenhuma mensagem encontrada</h3>
+                <p class="output__inicial__texto">Digite um texto que você deseja criptografar ou descriptografar.</p>
+            </section>
+            <section class="output__final" id="output__final">
+                <div>
+                    <textarea class="output__final__texto" id="texto__final" readonly rows="11"></textarea>
+                </div>
+                <div>
+                    <button class="output__final__botao" onclick="copiar()">Copiar</button>
+                </div>
+            </section>
+        </output>
+    </main>
+    <footer>
+        <p>Autor: Guilherme Souza</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
